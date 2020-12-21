@@ -147,20 +147,28 @@ body {
 }
 
 .ga-answer-option {
-    border: 2px solid black;
-    border-radius: 10px;
-    height: 25%;
     border: 1px solid #999;
     border-radius: 10px;
     background-color: #eee;
     overflow: hidden;
     margin: 10px;
-    height: 90%;
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ga-answer-option:hover {
+    background-color: rgb(165, 165, 165);
+    cursor: pointer;
 }
 
 .ga-answer-option img {
-    max-width: 250px;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    max-width: 150px;
+    min-width: 100px;
 }
 
 table { border-collapse: separate; }
@@ -296,5 +304,9 @@ tr:last-child td:last-child {
     .animal-growup iframe {
         width: 90%;
         height: 100%;
+    }
+
+    .question-number {
+        margin-top: 100px;
     }
 }
